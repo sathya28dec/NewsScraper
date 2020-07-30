@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "didUMean": {
+      "type": "string"
+    },
+    "relatedSearch": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "_type": {
+      "type": "string"
+    },
+    "totalCount": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "datePublished": {
+              "type": "string"
+            },
+            "image": {
+              "type": "object",
+              "properties": {
+                "base64Encoding": {
+                  "type": "null"
+                },
+                "imageWebSearchUrl": {
+                  "type": "null"
+                },
+                "thumbnail": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "thumbnailWidth": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "null"
+                },
+                "thumbnailHeight": {
+                  "type": "integer"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "base64Encoding",
+                "imageWebSearchUrl",
+                "thumbnail",
+                "width",
+                "name",
+                "thumbnailWidth",
+                "title",
+                "thumbnailHeight",
+                "url",
+                "height"
+              ]
+            },
+            "keywords": {
+              "type": "string"
+            },
+            "provider": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "isSafe": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "datePublished",
+            "image",
+            "keywords",
+            "provider",
+            "description",
+            "language",
+            "id",
+            "title",
+            "body",
+            "url",
+            "isSafe"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "didUMean",
+    "relatedSearch",
+    "_type",
+    "totalCount",
+    "value"
+  ]
+}

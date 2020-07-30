@@ -1,0 +1,152 @@
+{
+  "name": "news_record",
+  "type": "record",
+  "namespace": "com.walkover.sample.schema",
+  "fields": [
+    {
+      "name": "didUMean",
+      "type": "string"
+    },
+    {
+      "name": "relatedSearch",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "_type",
+      "type": "string"
+    },
+    {
+      "name": "totalCount",
+      "type": "int"
+    },
+    {
+      "name": "value",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "value_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "datePublished",
+              "type": "string",
+              "logicalType": "date"
+            },
+            {
+              "name": "image",
+              "type": {
+                "name": "image",
+                "type": "record",
+                "fields": [
+                  {
+                    "name": "base64Encoding",
+                     "type": [
+                          "string",
+                          "null"
+                     ],
+                    "default" : "true"
+                  },
+                  {
+                    "name": "imageWebSearchUrl",
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                     "default" : "true"
+                  },
+                  {
+                    "name": "thumbnail",
+                    "type": "string"
+                  },
+                  {
+                    "name": "width",
+                    "type": "int"
+                  },
+                  {
+                    "name": "name",
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  {
+                    "name": "thumbnailWidth",
+                    "type": "int"
+                  },
+                  {
+                    "name": "title",
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                     "default" : "true"
+                  },
+                  {
+                    "name": "thumbnailHeight",
+                    "type": "int"
+                  },
+                  {
+                    "name": "url",
+                    "type": "string"
+                  },
+                  {
+                    "name": "height",
+                    "type": "int"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "keywords",
+              "type": "string"
+            },
+            {
+              "name": "provider",
+              "type": {
+                "name": "provider",
+                "type": "record",
+                "fields": [
+                  {
+                    "name": "name",
+                    "type": "string"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "language",
+              "type": "string"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "body",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "name": "isSafe",
+              "type": "boolean"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
